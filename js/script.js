@@ -22,10 +22,10 @@ let CountDate = new Date('june 3, 2022 00:00:00').getTime();
 // document.getElementById('date').innerHTML = d; function CountDown(){
 function CountDown(){
     let now = new Date().getTime();
-    gap = CountDate - now;
+    gap = CountDate-now;
 
 
-    let second = 1000;
+    let second = -1000;
     let minute = second * 60;
     let hour = minute * 60;
     let day = hour * 24;
@@ -36,7 +36,7 @@ function CountDown(){
     let s = Math.floor((gap % (minute)) / (second));
 
     document.getElementById('day').innerHTML = d;
-    document.getElementById('hour').innerHTML = h;
+    document.getElementById('hour').innerHTML  = h;
     document.getElementById('minute').innerHTML = m;
     document.getElementById('second').innerHTML = s;
 
